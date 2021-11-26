@@ -1,0 +1,37 @@
+@import '../../global.scss';
+.about{
+    background-color:lightgreen ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        margin-top: 40px;
+        font-size: 50px;
+        color:$mainColor
+    }
+    .aboutme{
+        margin-top: 40px;
+        font-size: 25px;
+        font-weight: 100px;
+        margin-left: 25px;
+        margin-right: 25px;
+        a{
+            position: absolute;
+            bottom:-830px;
+            left:800px;
+    
+            img{
+                width: 60px;
+                animation: arrowBlink 2s infinite;
+            }
+            @keyframes arrowBlink {
+                to{
+                    opacity: 0;
+                }
+            }
+        }
+       
+    }
+  
+}
